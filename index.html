@@ -25,11 +25,11 @@
             left: 15px;  
             font-size: 14px;  
             font-weight: 600;
-            color: #000000; /* Bootstrap primary color */  
+            color: #000000; 
             transition: 0.2s ease all;  
             pointer-events: none;  
-            background: white; /* Ensure label has a background to overlap width */  
-            padding: 0 5px; /* Optional: to cover the border */  
+            background: white;  
+            padding: 0 5px; 
         }  
         .form-control {  
             padding: 10px;  
@@ -38,12 +38,18 @@
             outline: none;  
         }  
         .form-control:focus {  
-            border-color: #007bff; /* Change border color on focus */  
+            border-color: #007bff;  
         }  
         .submit-btn {  
             background-color: black;  
             color: white;  
         }  
+        @media (max-width: 767.98px) { 
+  .form-control  {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
     </style>  
 </head>  
 <body>  
@@ -91,7 +97,7 @@
                
             </div>
 
-            <div class="row g-3 mb-4">
+            <div class="row g-3 mb-4 gap-sm-5">
                 <!-- Order Status -->
                 <div class="col-md-3">
                     <label for="orderStatus" class="form-label">Order Status</label>
